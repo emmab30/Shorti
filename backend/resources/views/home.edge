@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Convert any long link to a short link, and your users will be grateful to you.">
+        <meta name="robots" content= "index, follow">
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://shorti.io/">
+        <meta property="og:title" content="Short links, simplify life">
+        <meta property="og:description" content="Convert any long link to a short link, and your users will be grateful to you.">
+        <meta property="og:image" content="https://i.ibb.co/rxsWkFM/metadata.png">
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://shorti.io/">
+        <meta property="twitter:title" content="Short links, simplify life">
+        <meta property="twitter:description" content="Convert any long link to a short link, and your users will be grateful to you.">
+        <meta property="twitter:image" content="https://i.ibb.co/rxsWkFM/metadata.png">
+        <!-- GA !-->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-88TTMW3MK4"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-88TTMW3MK4');
+        </script>
+        <!-- FB Pixel !-->
+        <script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '330341754199021');
+            fbq('track', 'PageView');
+        </script>
+        <noscript>
+            <img height="1" width="1" style="display:none" 
+                src="https://www.facebook.com/tr?id=330341754199021&ev=PageView&noscript=1"/>
+        </noscript>
+        <!-- End Facebook Pixel Code -->
+
+        <title>Shorti: Simplify Links</title>
+        <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|IBM+Plex+Sans:600" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.css" integrity="sha512-DIW4FkYTOxjCqRt7oS9BFO+nVOwDL4bzukDyDtMO7crjUZhwpyrWBFroq+IqRe6VnJkTpRAS6nhDvf0w+wHmxg==" crossorigin="anonymous" />
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+        
+        <!-- jQuery Modal -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    </head>
+    <body class="is-boxed has-animations">
+        <div class="body-wrap boxed-container">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-header-inner">
+                        <div class="brand header-brand">
+                          <img class="header-logo-image asset-light" src="/logo.png" alt="Logo">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section class="hero">
+                    <div class="container">
+                        <div class="hero-inner">
+                            <div class="hero-copy">
+                                <h1 class="hero-title mt-0">Short links, simplify life</h1>
+                                <p class="hero-paragraph">Convert your long links into short links, and your users will thank you.</p>
+                            </div>
+                            <div class="hero-media">
+                                <div class="header-illustration">
+                                    <img class="header-illustration-image asset-light" src="/assets/images/header-illustration-light.svg" alt="Header illustration">
+                                    <img class="header-illustration-image asset-dark" src="/assets/images/header-illustration-dark.svg" alt="Header illustration">
+                                </div>
+                                <div class="hero-media-illustration">
+                                    <img class="hero-media-illustration-image asset-light" src="/assets/images/hero-media-illustration-light.svg" alt="Hero media illustration">
+                                    <img class="hero-media-illustration-image asset-dark" src="/assets/images/hero-media-illustration-dark.svg" alt="Hero media illustration">
+                                </div>
+                                <div class="hero-media-container">
+                                    <img class="hero-media-image asset-light" src="/assets/images/hero-media-light.jpg" alt="Hero media">
+                                    <img class="hero-media-image asset-dark" src="/assets/images/hero-media-dark.svg" alt="Hero media">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hero-cta">
+                            <div class="wrap-input100 validate-input m-b-20">
+                                <input class="input100" type="text" name="link" placeholder="Enter your link here">
+                                <span class="focus-input100"></span>
+
+                                <div class="progress-conversion">
+                                  <span id="progress-bar"></span>
+                                </div>
+                            </div>
+
+                            <div class="container-login100-form-btn">
+                                <button class="login100-form-btn simplify">
+                                  Simplify
+                                </button>
+                            </div>
+                            <!-- <a class="button button-primary" href="#">Buy it now</a>
+                            <div class="lights-toggle">
+                                <input id="lights-toggle" type="checkbox" name="lights-toggle" class="switch" checked="checked">
+                                <label for="lights-toggle" class="text-xs"><span>Turn me <span class="label-text">dark</span></span></label>
+                            </div> !-->
+                        </div>
+
+                        <p class="error-message">Oops! Something happened. Could you try it again?</p>
+
+                        <section class="cta section got-link-container">
+                            <div class="container-sm">
+                                <div class="cta-inner got-link">
+                                    <div class="cta-header text-center">
+                                        <h2 class="section-title mt-0">Got your link</h2>
+                                        <a id="short_link" href="#" target="_blank">https://shorti.io/hash</a>
+                                        <div class="cta-cta">
+                                            <button id="copy-button" class="button button-primary copy-button">
+                                                COPY LINK
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <!-- <section class="features section">
+                    <div class="container">
+                        <div class="features-inner section-inner has-bottom-divider">
+                            <div class="features-header text-center">
+                                <div class="container-sm">
+                                    <h2 class="section-title mt-0">The Product</h2>
+                                    <p class="section-paragraph">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
+                                    <div class="features-image">
+                                        <img class="features-illustration asset-dark" src="/assets/images/features-illustration-dark.svg" alt="Feature illustration">
+                                        <img class="features-box asset-dark" src="/assets/images/features-box-dark.svg" alt="Feature box">
+                                        <img class="features-illustration asset-dark" src="/assets/images/features-illustration-top-dark.svg" alt="Feature illustration top">
+                                        <img class="features-illustration asset-light" src="/assets/images/features-illustration-light.svg" alt="Feature illustration">
+                                        <img class="features-box asset-light" src="/assets/images/features-box-light.svg" alt="Feature box">
+                                        <img class="features-illustration asset-light" src="/assets/images/features-illustration-top-light.svg" alt="Feature illustration top">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="features-wrap">
+                                <div class="feature is-revealing">
+                                    <div class="feature-inner">
+                                        <div class="feature-icon">
+                                            <img class="asset-light" src="/assets/images/feature-01-light.svg" alt="Feature 01">
+                                            <img class="asset-dark" src="/assets/images/feature-01-dark.svg" alt="Feature 01">
+                                        </div>
+                                        <div class="feature-content">
+                                            <h3 class="feature-title mt-0">Discover</h3>
+                                            <p class="text-sm mb-0">Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dui.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="feature is-revealing">
+                                    <div class="feature-inner">
+                                        <div class="feature-icon">
+                                            <img class="asset-light" src="/assets/images/feature-02-light.svg" alt="Feature 02">
+                                            <img class="asset-dark" src="/assets/images/feature-02-dark.svg" alt="Feature 02">
+                                        </div>
+                                        <div class="feature-content">
+                                            <h3 class="feature-title mt-0">Discover</h3>
+                                            <p class="text-sm mb-0">Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dui.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="feature is-revealing">
+                                    <div class="feature-inner">
+                                        <div class="feature-icon">
+                                            <img class="asset-light" src="/assets/images/feature-03-light.svg" alt="Feature 03">
+                                            <img class="asset-dark" src="/assets/images/feature-03-dark.svg" alt="Feature 03">
+                                        </div>
+                                        <div class="feature-content">
+                                            <h3 class="feature-title mt-0">Discover</h3>
+                                            <p class="text-sm mb-0">Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dui.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="cta section">
+                    <div class="container-sm">
+                        <div class="cta-inner section-inner">
+                            <div class="cta-header text-center">
+                                <h2 class="section-title mt-0">Get it and Switch</h2>
+                                <p class="section-paragraph">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
+                                <div class="cta-cta">
+                                    <a class="button button-primary" href="#">Buy it now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> !-->
+            </main>
+            <footer class="site-footer has-top-divider">
+                <div class="container">
+                    <div class="site-footer-inner">
+                        <div class="brand footer-brand">
+                            <a href="#">
+                                <img class="asset-light" src="/logo.png" alt="Logo" style="max-width: 40px;">
+                            </a>
+                        </div>
+                        <ul class="footer-links list-reset">
+                            <li>
+                                <a href="#ex1" rel="modal:open">Developers</a>
+                            </li>
+                            <!-- <li>
+                                <a href="#">About us</a>
+                            </li> !-->
+                            <li>
+                                <a href="mailto:shorti.iolinks@gmail.com">Contact</a>
+                            </li>
+                            <!-- <li>
+                                <a href="#">Support</a>
+                            </li> !-->
+                        </ul>
+                        <ul class="footer-social-links list-reset">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/shorti.links">
+                                    <span class="screen-reader-text">Facebook</span>
+                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z" fill="#FFF"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <!-- <li>
+                                <a href="#">
+                                    <span class="screen-reader-text">Twitter</span>
+                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="#FFF"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="screen-reader-text">Google</span>
+                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z" fill="#FFF"/>
+                                    </svg>
+                                </a>
+                            </li> !-->
+                        </ul>
+                        <div class="footer-copyright">&copy; 2020 Shorti, all rights reserved</div>
+                    </div>
+                </div>
+            </footer>
+
+            <div id="ex1" class="modal">
+                <p>To make your links through our API, you need to send a request as following:</p>
+
+                <div>
+                    <p style="margin: 0; font-weight: 200;">Endpoint: <a href="https://shorti.io/api/v1/links/generate" style="font-weight: bold;">https://shorti.io/api/v1/links/generate</a></p>
+                    <p style="margin: 0;">Method: <span style="color: #535fd7; font-weight: bold;">POST</span></p>
+                    <p style="margin: 0;">Content Type: <span style="color: #535fd7; font-weight: bold;">application/json</span></p>
+                    <pre></pre>
+                </div>
+
+                <a href="#" rel="modal:close">Close</a>
+            </div>
+        </div>
+        <script
+          src="https://code.jquery.com/jquery-3.5.1.js"
+          integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+          crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous"></script>
+        <script src="/assets/js/main.js"></script>
+        <script src="/assets/js/api.js"></script>
+        <!-- jQuery Modal -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    </body>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyBIuDkNhyPKViv2kCUV6ExgZu4OA9PIpa8",
+            authDomain: "shorti-ea224.firebaseapp.com",
+            databaseURL: "https://shorti-ea224.firebaseio.com",
+            projectId: "shorti-ea224",
+            storageBucket: "shorti-ea224.appspot.com",
+            messagingSenderId: "677676891672",
+            appId: "1:677676891672:web:901100f4f7a50775690d6d",
+            measurementId: "G-5GQN4L1YN8"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script>
+        $(document).ready(function(){
+            var jsonStr = $("pre").text();
+            var jsonObj = {
+                long_link: '{your link here}'
+            };
+            var jsonPretty = JSON.stringify(jsonObj, null, '  ');
+
+            $("pre").text(jsonPretty);
+        });
+    </script>
+</html>
